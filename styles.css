@@ -1,0 +1,135 @@
+body {
+    background: #F3F3F3;
+}
+
+header {
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #EEE;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+table {
+    font-family: 'Roboto Slab', sans-serif;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(201, 206, 207);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px
+}
+
+tr>td:nth-child(1) {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #A2DBFA;
+}
+
+tr:nth-child(odd) {
+    background-color: #E8F0F2;
+}
+
+th {
+    background-color: #39A2DB;
+    color: rgb(80, 77, 77);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+tr:hover {
+    background-color: #7fb6cc;
+}
+
+.div1 {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(80, 77, 77);
+    font-weight: bold;
+    padding: 20px;
+}
+
+label {
+    background-color: #DBE6FD;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.pagination {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    table,
+    .pagination,
+    .div1 {
+        width: 100%;
+    }
+}
+
+.pagination ul {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 3px;
+    border-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pagination ul li {
+    color: #39A2DB;
+    list-style: none;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+
+.pagination ul li.number {
+    list-style: none;
+    width: 30px;
+    margin: 0 2px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.pagination ul li.number.first {
+    margin: 0px 3px 0 -5px;
+}
+
+.pagination ul li.number.last {
+    margin: 0px -5px 0 3px;
+}
+
+.pagination ul li.btn {
+    padding: 0 15px;
+    border-radius: 50px;
+    margin: 0 2px;
+    color: #fff;
+    background: #929797;
+}
+
+.pagination li.active,
+.pagination ul li.number:hover,
+.pagination ul li.btn:hover {
+    color: #fff;
+    background: #39A2DB;
+}
